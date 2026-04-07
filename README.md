@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +128,7 @@
     .proof{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--space-5)}
     .proof-card{padding:var(--space-6)}
     .proof-quote{font-family:var(--font-display);font-size:clamp(2rem,4.2vw,3.4rem);line-height:1;max-width:14ch;letter-spacing:-.03em;color:var(--color-text)}.quote-accent{color:var(--color-orange);font-weight:700}
-    .contact{display:grid;grid-template-columns:1fr .9fr;gap:var(--space-5)}
+    .contact{display:grid;grid-template-columns:1fr .9fr;gap:var(--space-5)}.career-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-4)}.projects-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-4);margin-top:var(--space-4)}.project-card{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 9%, transparent);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);overflow:hidden}.project-card img{width:100%;height:200px;object-fit:cover;background:var(--color-surface-2)}.project-card-body{padding:var(--space-4)}.project-card h3{font-size:var(--text-base);margin-bottom:.45rem}.project-card p{font-size:var(--text-sm);color:var(--color-text-muted)}.career-card{background:var(--color-surface);border:1px solid color-mix(in srgb,var(--color-text) 9%, transparent);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm);overflow:hidden}.career-card img{width:100%;height:220px;object-fit:cover;background:var(--color-surface-2)}.career-card-body{padding:var(--space-5)}.career-card h3{font-size:var(--text-lg);margin-bottom:var(--space-2)}.career-meta{font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3)}.career-card p{color:var(--color-text-muted)}
     .contact-card{padding:var(--space-6)}
     .contact-list{display:grid;gap:var(--space-3);margin-top:var(--space-5)}
     .contact-item{display:flex;justify-content:space-between;gap:var(--space-4);padding-bottom:var(--space-3);border-bottom:1px solid color-mix(in srgb,var(--color-text) 8%, transparent)}
@@ -138,7 +137,7 @@
     .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
     .reveal.visible{opacity:1;transform:translateY(0)}
     @media (max-width: 980px){
-      .hero-grid,.section-head,.proof,.contact,.grid-2,.tools,.services{grid-template-columns:1fr}
+      .hero-grid,.section-head,.proof,.contact,.grid-2,.tools,.services,.career-grid,.projects-grid{grid-template-columns:1fr}
       .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
       .timeline{grid-template-columns:1fr 1fr}
       .nav-links a.hide-md{display:none}
@@ -324,6 +323,66 @@
             </ul>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Projects & Brands</span>
+            <h2><span class="section-accent">Campaigns and brands I have worked on.</span></h2>
+          </div>
+          <p>This section expands your portfolio beyond employers and shows category range across restaurant, real estate, media, solar, township, safety, and healthcare marketing contexts.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0aae4f2258e2dce8e733276a037f6bace989eabd.jpg" alt="Pudumadam Restaurant visual" width="1728" height="1296" loading="lazy" /><div class="project-card-body"><h3>Pudumadam Restaurant</h3><p>Restaurant marketing and visibility-focused brand support.</p></div></article>
+          <article class="project-card reveal"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/688234b17f6c9739877decfc4f8e17cdde45e93e.jpg" alt="Vibha Reality visual" width="808" height="870" loading="lazy" /><div class="project-card-body"><h3>Vibha Reality</h3><p>Real estate promotion, lead generation, and campaign execution support.</p></div></article>
+          <article class="project-card reveal"><img src="https://picsum.photos/seed/estate-times/900/700" alt="The Estate Times editorial visual" width="900" height="700" loading="lazy" /><div class="project-card-body"><h3>The Estate Times</h3><p>Media and publishing-oriented digital visibility support for real estate audiences.</p></div></article>
+          <article class="project-card reveal"><img src="https://picsum.photos/seed/filmfare-south/900/700" alt="The Filmfare South editorial visual" width="900" height="700" loading="lazy" /><div class="project-card-body"><h3>The Filmfare South</h3><p>Entertainment and brand-promotion aligned campaign exposure.</p></div></article>
+          <article class="project-card reveal"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/7f4d978c9385feb78b6fd4754507e20237421534.jpg" alt="Kakatiya Solar Energies visual" width="1920" height="1440" loading="lazy" /><div class="project-card-body"><h3>Kakatiya Solar Energies</h3><p>Solar lead generation, awareness, and business growth support.</p></div></article>
+          <article class="project-card reveal"><img src="https://picsum.photos/seed/sumanohara-township/900/700" alt="Sumanohara Township real estate visual" width="900" height="700" loading="lazy" /><div class="project-card-body"><h3>Sumanohara Township</h3><p>Township-focused real estate campaign support and audience targeting.</p></div></article>
+          <article class="project-card reveal"><img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3c62455be3fb4200d64159b2b35cb9f869a14fb0.jpg" alt="RK Fire and Safety Systems visual" width="1280" height="704" loading="lazy" /><div class="project-card-body"><h3>RK Fire and Safety Systems</h3><p>Business visibility and service-led positioning for safety solutions.</p></div></article>
+          <article class="project-card reveal"><img src="https://picsum.photos/seed/manjeera-hospital/900/700" alt="Manjeera Hospital healthcare visual" width="900" height="700" loading="lazy" /><div class="project-card-body"><h3>Manjeera Hospital</h3><p>Healthcare-focused digital marketing support and local visibility building.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="companies">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Previous Companies</span>
+            <h2><span class="section-accent">Career journey and brand exposure.</span></h2>
+          </div>
+          <p>Experience includes in-house digital marketing roles and project-based work across real estate, space-focused branding, and solar-related lead generation environments.</p>
+        </div>
+        <div class="career-grid">
+          <article class="career-card reveal">
+            <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/688234b17f6c9739877decfc4f8e17cdde45e93e.jpg" alt="Dhamam Infra Projects visual" width="808" height="870" loading="lazy" />
+            <div class="career-card-body">
+              <h3>Dhamam Infra Projects (P) Ltd.</h3>
+              <div class="career-meta">Deputy Manager, Digital Marketing · Aug 2024 – Mar 2026 · Hyderabad</div>
+              <p>Focused on Facebook Ads, Google Ads, social media marketing, and high-quality lead generation for brand growth and acquisition efficiency.</p>
+            </div>
+          </article>
+          <article class="career-card reveal">
+            <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/aaab2e909d7246fa3c2278f29785241e1fc68c0d.jpg" alt="Terran Space visual" width="1500" height="1152" loading="lazy" />
+            <div class="career-card-body">
+              <h3>Terran Space</h3>
+              <div class="career-meta">Digital Marketing Executive · Oct 2022 – Sep 2024 · Hyderabad</div>
+              <p>Worked on lead generation, SEO, website design support, email marketing, creative design, and campaign optimization across digital channels.</p>
+            </div>
+          </article>
+          <article class="career-card reveal">
+            <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4def945c2ed84e3d482ae4124b46fb6f9cce5676.jpg" alt="Kakatiya Solar Energies visual" width="1080" height="1079" loading="lazy" />
+            <div class="career-card-body">
+              <h3>Kakatiya Solar Energies</h3>
+              <div class="career-meta">Self Employed / Project Work · Jan 2026 – Present</div>
+              <p>Supporting solar-focused digital marketing efforts with consultation-style project execution and business visibility improvement.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
