@@ -2,48 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Omsekhar Mandala | Digital Marketing Expert</title>
-  <meta name="description" content="Premium personal portfolio of Omsekhar Mandala, a digital marketing expert focused on Google Ads, Meta Ads, lead generation, and scalable growth systems." />
 
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=boska@400,500,700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Premium personal portfolio of Omsekhar Mandala, a digital marketing expert focused on Google Ads, Meta Ads, lead generation, and scalable growth systems."/>
+
+  <!-- Fonts -->
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=boska@400,500,700&display=swap" rel="stylesheet"/>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: 'General Sans', sans-serif;
       background: #f7f6f2;
-      color: #222;
+      color: #221f1a;
     }
-    header {
-      padding: 20px;
-      background: #0f6b6f;
-      color: white;
-      text-align: center;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
       margin: auto;
     }
-    h1, h2 {
-      margin-bottom: 10px;
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
     }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    .hero {
+      padding: 60px 0;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      color: #666;
+    }
+
     .btn {
       padding: 10px 20px;
-      background: #0f6b6f;
-      color: white;
       border-radius: 25px;
-      text-decoration: none;
       display: inline-block;
-      margin-top: 10px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
       margin-top: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: #0f6b6f;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      border: 1px solid #ccc;
+      color: #333;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .card {
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #eee;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -51,44 +98,72 @@
 <body>
 
 <header>
-  <h1>Omsekhar Mandala</h1>
-  <p>Digital Marketing Expert</p>
+  <div class="container nav">
+    <div class="logo">Omsekhar Mandala</div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I help businesses generate high-quality leads and scale revenue using Google Ads, Meta Ads,
-    and performance marketing strategies.
-  </p>
-</section>
+<section class="hero">
+  <div class="container">
+    <h1>Driving leads, visibility, and scalable business growth</h1>
+    <p>
+      I help businesses generate high-quality leads using Google Ads, Meta Ads,
+      and high-converting funnels.
+    </p>
 
-<section>
-  <h2>Key Highlights</h2>
-  <div class="card">
-    <p>✔ 7+ Years Experience</p>
-    <p>✔ 4000+ Leads Generated</p>
-    <p>✔ ₹15L+ Ad Spend Managed</p>
+    <a href="#results" class="btn btn-primary">View Case Studies</a>
+    <a href="#contact" class="btn btn-secondary">Hire Me</a>
   </div>
 </section>
 
-<section>
-  <h2>Services</h2>
-  <div class="card">
-    <p>• Performance Marketing</p>
-    <p>• Lead Generation Systems</p>
-    <p>• LinkedIn Ads</p>
-    <p>• SEO Strategy</p>
-    <p>• Website Design</p>
+<section class="section" id="results">
+  <div class="container">
+    <h2>Performance Snapshot</h2>
+
+    <div class="card">
+      <strong>Ad Spend Managed:</strong> ₹15,00,000+
+    </div>
+
+    <div class="card">
+      <strong>Total Leads:</strong> 4000+
+    </div>
+
+    <div class="card">
+      <strong>Average CPL:</strong> ₹375
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: omsekharmandala@gmail.com</p>
-    <p>Phone: +91 9492535389</p>
-    <a href="mailto:omsekharmandala@gmail.com" class="btn">Hire Me</a>
+<section class="section" id="services">
+  <div class="container">
+    <h2>Services</h2>
+
+    <div class="card">
+      <h3>Performance Marketing</h3>
+      <p>Google Ads & Meta Ads campaigns for lead generation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lead Generation Systems</h3>
+      <p>Complete funnel setup from click to conversion.</p>
+    </div>
+
+    <div class="card">
+      <h3>SEO Strategy</h3>
+      <p>Improve organic visibility and traffic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Let’s build your next growth system.</p>
   </div>
 </section>
 
