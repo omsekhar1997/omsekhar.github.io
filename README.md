@@ -180,17 +180,39 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal visible">
-          <span class="eyebrow">Digital Marketing Expert</span>
-          <h1><span class='hero-accent'>Driving leads, visibility, and scalable business growth</span> through digital marketing.</h1>
-          <p>I help businesses generate high-quality leads and scale revenue with conversion-focused Google Ads, Meta Ads, funnel strategy, and continuous performance optimization.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#results">View Case Studies</a>
-            <a class="btn btn-secondary" href="#contact">Hire Me</a>
-          </div>
+ <main id="main">
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+
+        <!-- Subheading -->
+        <p class="eyebrow">Digital Marketing Expert</p>
+
+        <!-- Main Heading -->
+        <h1>
+          Driving leads, visibility, and scalable business growth through digital marketing.
+        </h1>
+
+        <!-- Description Paragraph -->
+        <p>
+          I help businesses generate high-quality leads and scale revenue using 
+          conversion-focused strategies. My expertise includes Google Ads, Meta Ads, 
+          funnel building, and continuous performance optimization to maximize ROI 
+          and long-term growth.
+        </p>
+
+        <!-- Call to Actions -->
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#results">View Case Studies</a>
+          <a class="btn btn-secondary" href="#contact">Hire Me</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</main>
           <div class="trust-row" aria-label="Key highlights">
             <span class="chip">7+ Years Professional Experience</span>
             <span class="chip">4.6+ Years in Digital Marketing</span>
