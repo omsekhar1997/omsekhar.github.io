@@ -180,15 +180,6 @@
     </div>
   </header>
 
- <main id="main">
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-
-      <div class="hero-copy">
-
-        <!-- Subheading -->
-        <p class="eyebrow">Digital Marketing Expert</p>
-
   <main id="main">
     <section class="hero" id="home">
       <div class="container hero-grid">
@@ -200,13 +191,6 @@
             <a class="btn btn-primary" href="#results">View Case Studies</a>
             <a class="btn btn-secondary" href="#contact">Hire Me</a>
           </div>
-
-give me this paragraph wise
-      </div>
-
-    </div>
-  </section>
-</main>
           <div class="trust-row" aria-label="Key highlights">
             <span class="chip">7+ Years Professional Experience</span>
             <span class="chip">4.6+ Years in Digital Marketing</span>
