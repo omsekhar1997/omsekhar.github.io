@@ -1,212 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Om Sekhar | Performance Marketing Expert</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="Performance Marketing Specialist helping businesses generate high-quality leads using Google Ads & Meta Ads." />
-  <meta name="keywords" content="Digital Marketing, Google Ads, Meta Ads, Lead Generation, Performance Marketing India" />
-  <meta name="author" content="Om Sekhar">
+<title>Omsekhar Mandala | Digital Marketing Expert</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet"/>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'General Sans', sans-serif;
+  background: #f7f6f2;
+  color: #221f1a;
+}
 
-    body {
-      background: #0f172a;
-      color: #fff;
-      line-height: 1.6;
-    }
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    header {
-      padding: 20px 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #020617;
-      position: sticky;
-      top: 0;
-    }
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
 
-    header h1 {
-      font-size: 20px;
-      color: #38bdf8;
-    }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #ccc;
-    }
+.logo {
+  font-weight: 700;
+}
 
-    nav a:hover {
-      color: #38bdf8;
-    }
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #666;
+}
 
-    section {
-      padding: 80px 10%;
-    }
+/* HERO SECTION */
+.hero {
+  padding: 80px 0;
+}
 
-    .hero {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 90vh;
-    }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; /* FIXED GAP */
+  gap: 40px;
+}
 
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
+/* TEXT */
+.hero-copy h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.05; /* FIXED */
+  letter-spacing: -0.03em;
+  max-width: 14ch; /* FIXED */
+  word-break: keep-all;
+}
 
-    .hero span {
-      color: #38bdf8;
-    }
+.hero-accent {
+  color: #d66a00;
+  font-weight: 800;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #38bdf8;
-      color: #000;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+.hero-copy p {
+  margin-top: 12px;
+  color: #666;
+  max-width: 500px;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-    }
+.btn-primary {
+  background: #0f6b6f;
+  color: white;
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #38bdf8;
-    }
+.btn-secondary {
+  border: 1px solid #ccc;
+  color: #333;
+  margin-left: 10px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      margin-top: 40px;
-    }
+/* RIGHT CARD */
+.hero-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
 
-    /* WhatsApp Button */
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      text-decoration: none;
-      font-size: 20px;
-    }
-  </style>
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.mini-stat {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.mini-stat strong {
+  display: block;
+  font-size: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy h1 {
+    max-width: 100%;
+  }
+
+  .btn {
+    display: block;
+    margin-right: 0;
+  }
+
+  .btn-secondary {
+    margin-left: 0;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Om Sekhar</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container nav">
+    <div class="logo">Omsekhar Mandala</div>
+    <div class="nav-links">
+      <a href="#">Services</a>
+      <a href="#">Results</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
 </header>
 
 <section class="hero">
-  <h2>Hi, I’m <span>Om Sekhar</span> 👋</h2>
-  <p>Performance Marketing Specialist | Google Ads & Meta Ads Expert</p>
-  <p>I help businesses generate high-quality leads & scale revenue.</p>
-  <a href="#contact" class="btn">Hire Me</a>
-</section>
+  <div class="container hero-grid">
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>7+ years experience in marketing. Specialized in performance marketing with proven results in lead generation and ROI optimization.</p>
+    <!-- LEFT CONTENT -->
+    <div class="hero-copy">
 
-  <div class="cards">
-    <div class="card">
-      <h3>4000+</h3>
-      <p>Leads Generated</p>
+      <h1>
+        <span class="hero-accent">Driving leads, visibility,</span><br>
+        and scalable business growth<br>
+        through digital marketing.
+      </h1>
+
+      <p>
+        I help businesses generate high-quality leads using Google Ads, Meta Ads,
+        and high-converting funnels.
+      </p>
+
+      <a href="#" class="btn btn-primary">View Case Studies</a>
+      <a href="#" class="btn btn-secondary">Hire Me</a>
+
     </div>
-    <div class="card">
-      <h3>₹15L+</h3>
-      <p>Ad Spend Managed</p>
+
+    <!-- RIGHT CARD -->
+    <div class="hero-card">
+
+      <p><strong>Executive Snapshot</strong></p>
+      <p style="color:#666;">
+        Results-driven marketer focused on lead generation and ROI-based growth systems.
+      </p>
+
+      <div class="mini-grid">
+        <div class="mini-stat">
+          <span>Leads</span>
+          <strong>4000+</strong>
+        </div>
+        <div class="mini-stat">
+          <span>Avg CPL</span>
+          <strong>₹375</strong>
+        </div>
+        <div class="mini-stat">
+          <span>Platforms</span>
+          <strong>Google | Meta</strong>
+        </div>
+        <div class="mini-stat">
+          <span>Focus</span>
+          <strong>ROI</strong>
+        </div>
+      </div>
+
     </div>
-    <div class="card">
-      <h3>7+</h3>
-      <p>Years Experience</p>
-    </div>
+
   </div>
 </section>
-
-<section id="services">
-  <h2>Services</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Google Ads</h3>
-      <p>High-converting search & display campaigns.</p>
-    </div>
-    <div class="card">
-      <h3>Meta Ads</h3>
-      <p>Lead generation through Facebook & Instagram.</p>
-    </div>
-    <div class="card">
-      <h3>SEO</h3>
-      <p>Rank higher and get organic traffic.</p>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Case Studies</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Real Estate Campaign</h3>
-      <p>Generated 120+ leads in 30 days with ₹320 CPL.</p>
-    </div>
-    <div class="card">
-      <h3>E-commerce Ads</h3>
-      <p>Achieved 4X ROAS with Meta Ads strategy.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Email: omsekharmandala@gmail.com</p>
-  <p>Phone: +91 9492535389</p>
-  <a href="mailto:omsekharmandala@gmail.com" class="btn">Send Email</a>
-</section>
-
-<footer>
-  <p>© 2026 Om Sekhar | Digital Marketing Expert</p>
-</footer>
-
-<!-- WhatsApp -->
-<a href="https://wa.me/919492535389" class="whatsapp">💬</a>
 
 </body>
 </html>
