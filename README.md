@@ -1,5 +1,3 @@
-# omsekhar.github.io
-My Digital Marketing Portfolio
 <!DOCTYPE html>
 <html>
 <head>
